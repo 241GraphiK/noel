@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noël de Jerry</title>
+  <link rel="stylesheet" href="stylle.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="neon">JERRY</h1>
+    <h2>Vous souhaite un Joyeux Noël</h2>
+    <p>Que la magie de Noël illumine votre cœur !</p>
+
+    <button class="btn" onclick="showSurprise()">Clique ici pour la surprise 🎁</button>
+
+    <div id="surprise" class="hidden">
+      <p class="magic">✨ Que ton Noël soit rempli de joie, de chocolat et de rêves réalisés ! ✨</p>
+    </div>
+  </div>
+
+  <script>
+    function showSurprise() {
+      const surprise = document.getElementById("surprise");
+      surprise.classList.remove("hidden");
+      surprise.classList.add("visible");
+    }
+  </script>
+  <div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❄</div>
+</div>
+</body>
+</html>
